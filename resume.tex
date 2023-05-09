@@ -1,7 +1,7 @@
 % resume.tex
 % vim:set ft=tex spell:
 
-\documentclass[10pt,letterpaper]{article}
+\documentclass[12pt,letterpaper]{article}
 \usepackage[letterpaper,margin=0.75in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
@@ -15,24 +15,24 @@
 % that need indentation to the level of all text in the document
 \newenvironment{indentsection}[1]%
 {\begin{list}{}%
-	{\setlength{\leftmargin}{#1}}%
-	\item[]%
+    {\setlength{\leftmargin}{#1}}%
+    \item[]%
 }
 {\end{list}}
 
 % opposite of above; bump a section back toward the left margin
 \newenvironment{unindentsection}[1]%
 {\begin{list}{}%
-	{\setlength{\leftmargin}{-0.5#1}}%
-	\item[]%
+    {\setlength{\leftmargin}{-0.5#1}}%
+    \item[]%
 }
 {\end{list}}
 
 % format two pieces of text, one left aligned and one right aligned
 \newcommand{\headerrow}[2]
 {\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
-	#1 &
-	#2 \\
+#1 &
+#2 \\
 \end{tabular*}}
 
 % make "C++" look pretty when used in text by touching up the plus signs
@@ -46,11 +46,11 @@
 \begin{document}
 
 \begin{center}
-	{\LARGE \textbf{Aaron Cunningham}}
+    {\LARGE \textbf{Aaron Cunningham}}
 
-	209.380.3039\innerbullet
-	aa.cunningham@outlook.com\innerbullet
-	Fresno, CA
+    209.380.3039\innerbullet
+    aa.cunningham@outlook.com\innerbullet
+    Fresno, CA
 \end{center}
 
 \hrule
@@ -58,83 +58,52 @@
 \subsection*{Experience}
 
 \begin{itemize}
-	\parskip=0.1em
+    \parskip=0.1em
 
-	\item
-	      \headerrow
-	      {\textbf{Enervee}}
-	      {\textbf{Venice, CA}}
-	      \\
-	      \headerrow
-	      {\emph{Senior Software Engineer}}
-	      {\emph{2020 -- 2023}}
-	      \begin{itemize*}
-		      \item Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-		            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-		            erat volutpat.
-		      \item Duis splople autem vel eum iriure dolor in hendrerit in vulputate
-		            velit esse molestie consequat, vel illum dolore eu feugiat nulla
-		            facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-		            praesent luptatum zzril delenit augue duis dolore te feugait nulla
-		            facilisi.
-		      \item Nam liber tempor cum soluta nobis eleifend option congue nihil
-		            imperdiet doming id quod mazim placerat facer possim assum. Typi non
-		            habent claritatem insitam; est usus legentis in iis qui facit eorum
-		            claritatem.
-		      \item Investigationes demonstraverunt lectores legere me lius
-		            quod ii legunt saepius. Claritas est etiam processus dynamicus, qui
-		            sequitur mutationem consuetudium lectorum.
-		      \item Mirum est notare quam littera gothica, quam nunc putamus parum
-		            claram, anteposuerit litterarum formas humanitatis per seacula quarta
-		            decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum
-		            clari, fiant sollemnes in futurum.
-	      \end{itemize*}
+    \item
+          \headerrow
+          {\textbf{Senior Software Engineer}}
+          {\textbf{2020 -- 2023}}
+          \\
+          \headerrow
+          {\emph{Enervee}}
+          {\emph{Venice, CA}}
+          \begin{itemize*}
+              \item Lead the engineering effort to refactor and replace an existing service, converting it to an event-based architecture and improving performance and reliability of the system.
+              \item Managed multiple interlacing critical integrations focused on reliability and recoverability.
+              \item Collaborated with Product Managers to shape the roadmap of upcoming features, finding ways to incrementally reach goals and providing trade-offs that provide the most impact for the engineering effort.
+              \item Provided relevant and constructive feedback in code reviews to promote growth in peers and guide the general architecture of systems.
+              \item Regularly shared and promoted learning resources and held discussions on ways to improve software quality in projects across the engineering organisation.
+          \end{itemize*}
 
-	\item
-	      \headerrow
-	      {\textbf{The Boeing Company}}
-	      {\textbf{Fairfax, VA}}
-	      \\
-	      \headerrow
-	      {\emph{Software Engineer}}
-	      {\emph{2019-2020}}
-	      \begin{itemize*}
-		      \item Ut wisi enim ad minim veniam, quis nostrud exerci tation
-		            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-		      \item Duis splople autem vel eum iriure dolor in hendrerit in vulputate
-		            velit esse molestie consequat, vel illum dolore eu feugiat nulla
-		            facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-		            praesent luptatum zzril delenit augue duis dolore te feugait nulla
-		            facilisi.
-		      \item Nam liber tempor cum soluta nobis eleifend option congue nihil
-		            imperdiet doming id quod mazim placerat facer possim assum. Typi non
-		            habent claritatem insitam; est usus legentis in iis qui facit eorum
-		            claritatem.
-		      \item Mirum est notare quam littera gothica, quam nunc putamus parum
-		            claram, anteposuerit litterarum formas humanitatis per seacula quarta
-		            decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum
-		            clari, fiant sollemnes in futurum.
-	      \end{itemize*}
+    \item
+          \headerrow
+          {\textbf{Software Engineer}}
+          {\textbf{2019 -- 2020}}
+          \\
+          \headerrow
+          {\emph{The Boeing Company}}
+          {\emph{Fairfax, VA}}
+          \begin{itemize*}
+              \item Converted high level product specifications into architectural designs and time estimates spanning months at a time.
+              \item Collaborated in a cross functional team focused on quick iterations, gathering user feedback, and use it to inform next goals for the project.
+              \item Lead the development of a React/TypeScript project, providing guidance to engineers new to the technology and offering relevant suggestions and best practices to engineers with more experience.
+                    % \item 
+          \end{itemize*}
 
-	\item
-	      \headerrow
-	      {\textbf{Bixly}}
-	      {\textbf{Fresno, CA}}
-	      \\
-	      \headerrow
-	      {\emph{Software Engineer}}
-	      {\emph{2015 -- 2018}}
-	      \begin{itemize*}
-		      \item Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-		            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-		            erat volutpat.
-		      \item Ut wisi enim ad minim veniam, quis nostrud exerci tation
-		            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-		      \item Nam liber tempor cum soluta nobis eleifend option congue nihil
-		            imperdiet doming id quod mazim placerat facer possim assum. Typi non
-		            habent claritatem insitam; est usus legentis in iis qui facit eorum
-		            claritatem.
-	      \end{itemize*}
+    \item
+          \headerrow
+          {\textbf{Software Engineer}}
+          {\textbf{2015 -- 2018}}
+          \\
+          \headerrow
+          {\emph{Bixly}}
+          {\emph{Fresno, CA}}
+          \begin{itemize*}
+              \item Communicated with clients and stakeholders regarding the status of projects and features, discussing potential roadblocks and alternative approaches to avoid them.
+              \item Researched and estimated costs for planned feature work, providing clients with context to make informed decisions.
+              \item Completed tasks across various stacks of projects, tackling problems and features with a holistic view of the system.
+          \end{itemize*}
 
 \end{itemize}
 
@@ -144,19 +113,19 @@
 \subsection*{Education}
 
 \begin{itemize}
-	\parskip=0.1em
+    \parskip=0.1em
 
-	\item
-	      \headerrow
-	      {\textbf{California State University, Fresno}}
-	      {\textbf{Fresno, CA}}
-	      \\
-	      \headerrow
-	      {\emph{College of Science and Mathematics, Computer Science, B.S.}}
-	      {\emph{2010 -- 2016}}
-	      % \\
-	      % \headerrow
-	      % {\emph{College of Arts and Humanities, Music, Minor}}
+    \item
+          \headerrow
+          {\textbf{College of Science and Mathematics, Computer Science, B.S.}}
+          {\textbf{2010 -- 2016}}
+          \\
+          \headerrow
+          {\emph{California State University, Fresno}}
+          {\emph{Fresno, CA}}
+          % \\
+          % \headerrow
+          % {\emph{College of Arts and Humanities, Music, Minor}}
 
 \end{itemize}
 
@@ -166,18 +135,17 @@
 \subsection*{Core Technical Skills}
 
 \begin{indentsection}{\parindent}
-	\hyphenpenalty=1000
-	\begin{description*}
-		\item[Languages:]
-			Python, Rust, TypeScript, JavaScript
-		\item[Libraries/Frameworks:]
-			Django, React, Angular, Vue
-		\item[Technologies:]
-			Docker, Kubernetes, AWS, Linux
-			% \item[Open Source Contributions:]
-			% 	Project A, Project B, Project C
-	\end{description*}
+    \hyphenpenalty=1000
+    \begin{description*}
+        \item[Languages:]
+            Python, Rust, TypeScript, JavaScript
+        \item[Libraries/Frameworks:]
+            Django, Django Rest Framework, React, Angular, Vue
+        \item[Technologies:]
+            Docker, Kubernetes, AWS, Linux
+            % \item[Open Source Contributions:]
+            %     Project A, Project B, Project C
+    \end{description*}
 \end{indentsection}
 
 \end{document}
-
