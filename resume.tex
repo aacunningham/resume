@@ -1,13 +1,14 @@
 % resume.tex
 % vim:set ft=tex spell:
 
-\documentclass[10pt,letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 \usepackage[letterpaper,margin=0.75in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
-\usepackage[T1]{fontenc}
 \usepackage{textcomp}
-\usepackage{tgpagella}
+\usepackage{ebgaramond}
+\usepackage[T1]{fontenc}
+
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 
@@ -42,12 +43,53 @@
 \begin{document}
 
 \begin{center}
-    {\LARGE \textbf{Aaron Cunningham}}
+    {\huge \textbf{Aaron Cunningham}}
 
     209.380.3039\innerbullet
     aa.cunningham@outlook.com\innerbullet
     Fresno, CA
 \end{center}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Core Technical Skills}
+
+\begin{indentsection}{\parindent}
+    \hyphenpenalty=1000
+    \begin{description*}
+        \item[Languages:]
+            Python, Rust, SQL, TypeScript, JavaScript, HTML, CSS
+        \item[Libraries/Frameworks:]
+            Django, Django Rest Framework, pytest, tox, Actix Web, React, Angular, Vue
+        \item[Technologies:]
+            Git, Docker, Kubernetes, AWS, Linux, RDBMS, CI/CD (GitLab, GitHub Actions, Jenkins)
+            % \item[Open Source Contributions:]
+            %     Project A, Project B, Project C
+    \end{description*}
+\end{indentsection}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+    \parskip=0.1em
+
+    \item
+        \headerrow
+          {\textbf{College of Science and Mathematics, Computer Science, B.S.}}
+          {\textbf{2010 -- 2016}}
+          \\
+          \headerrow
+          {\emph{California State University, Fresno}}
+          {\emph{Fresno, CA}}
+          % \\
+          % \headerrow
+          % {\emph{College of Arts and Humanities, Music, Minor}}
+
+\end{itemize}
 
 \hrule
 \vspace{-0.4em}
@@ -57,9 +99,9 @@
     \parskip=0.1em
 
     \item
-          {\large \headerrow
+          \headerrow
           {\textbf{Senior Software Engineer}}
-          {\textbf{2020 -- 2023}}}
+          {\textbf{2020 -- 2023}}
           \\
           \headerrow
           {\emph{Enervee}}
@@ -74,9 +116,9 @@
           \end{itemize*}
 
     \item
-          {\large \headerrow
+          \headerrow
           {\textbf{Software Engineer}}
-          {\textbf{2019 -- 2020}}}
+          {\textbf{2019 -- 2020}}
           \\
           \headerrow
           {\emph{Argon ST, a Boeing company}}
@@ -89,9 +131,9 @@
           \end{itemize*}
 
     \item
-          {\large \headerrow
+          \headerrow
           {\textbf{Software Engineer}}
-          {\textbf{2015 -- 2018}}}
+          {\textbf{2015 -- 2018}}
           \\
           \headerrow
           {\emph{Bixly}}
@@ -103,46 +145,5 @@
           \end{itemize*}
 
 \end{itemize}
-
-
-\hrule
-\vspace{-0.4em}
-\subsection*{Education}
-
-\begin{itemize}
-    \parskip=0.1em
-
-    \item
-          \headerrow
-          {\textbf{College of Science and Mathematics, Computer Science, B.S.}}
-          {\textbf{2010 -- 2016}}
-          \\
-          \headerrow
-          {\emph{California State University, Fresno}}
-          {\emph{Fresno, CA}}
-          % \\
-          % \headerrow
-          % {\emph{College of Arts and Humanities, Music, Minor}}
-
-\end{itemize}
-
-
-\hrule
-\vspace{-0.4em}
-\subsection*{Core Technical Skills}
-
-\begin{indentsection}{\parindent}
-    \hyphenpenalty=1000
-    \begin{description*}
-        \item[Languages:]
-            Python, Rust, TypeScript, JavaScript, SQL, HTML, CSS
-        \item[Libraries/Frameworks:]
-            Django, Django Rest Framework, pytest, tox, Actix Web, React, Angular, Vue
-        \item[Technologies:]
-            Git, Docker, Kubernetes, AWS, Linux, RDBMS, CI/CD (GitLab, GitHub Actions, Jenkins)
-            % \item[Open Source Contributions:]
-            %     Project A, Project B, Project C
-    \end{description*}
-\end{indentsection}
 
 \end{document}
