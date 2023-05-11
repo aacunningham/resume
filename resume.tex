@@ -1,0 +1,62 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+\renewcommand{\familydefault}{\sfdefault}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+    {\setlength{\leftmargin}{#1}}%
+    \item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+    {\setlength{\leftmargin}{-0.5#1}}%
+    \item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+\newcommand{\innerbullet}
+{\hspace{0.6em}\textbullet\hspace{0.6em}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+    {\huge \textbf{Aaron Cunningham}}
+
+    209.380.3039\innerbullet
+    aa.cunningham@outlook.com\innerbullet
+    Fresno, CA
+\end{center}
+
+
+\hrule
+
+\begin{center}
+    \vspace{20em}
+    \Large i use arch btw.\par
+    \large (also vim.)
+\end{center}
+
+\end{document}
